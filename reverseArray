@@ -1,0 +1,8 @@
+int* reverseArray(int a_count, int* a, int* result_count) {
+    *result_count=a_count;
+    int i, *arregloauxiliar=malloc(*result_count*sizeof(int));
+    for (i=0; i<a_count; i++){
+        arregloauxiliar[i]=a[a_count-1-i];
+    }
+    return arregloauxiliar;
+}
