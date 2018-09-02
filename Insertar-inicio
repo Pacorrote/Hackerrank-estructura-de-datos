@@ -1,0 +1,13 @@
+SinglyLinkedListNode* insertNodeAtHead(SinglyLinkedListNode* llist, int data) {
+SinglyLinkedListNode *nodo=create_singly_linked_list_node(data);
+    nodo->data=data;
+    nodo->next=NULL;
+    if(llist!=NULL){
+        nodo->next=llist;
+        llist=nodo;
+    }
+    else{
+        llist=nodo;
+    }
+    return llist;
+}
